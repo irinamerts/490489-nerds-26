@@ -31,12 +31,45 @@
                 <main class="container">
                     <h1 class="page-title">Магазин готовых шаблонов</h1>
                     <section class="filters">
-                        <h2 class="visually-hidden">Фильр товаров</h2>
-                        <!--Здесь будет форма-->
-                    <section>
-                     <input type="checkbox" value="Адаптивная">
-                     <img src="img/radio-on.svg" width="25" height="25">
-                      </section>
+                        <h2 class="visually-hidden">Фильтр товаров</h2>
+                       <section>
+                       <fieldset>
+                          <legend>Сетка</legend>
+                         <ul>
+                           <li class="filter-options">
+                          <input type="radio" checked> Адаптивная
+                          </li>
+                         <li>
+                           <input type="radio">Фиксированная
+                          </li>
+                         <li>
+                         <input type="radio"> Резиновая
+                           </li>
+                       </ul>
+                         </fieldset>
+                         <fieldset>
+                           <legend> Особенности</legend>
+                           <ul>
+                             <li>
+                               <input type="checkbox" checked> Слайдер
+                             </li>
+                             <li>
+                                <input type="checkbox"> Блок преимуществ
+                             </li>
+                             <li>
+                                <input type="checkbox" checked> Новости
+                             </li>
+                             <li>
+                                <input type="checkbox"> Галарея
+                             </li>
+                             <li>
+                                <input type="checkbox"> Корзина
+                             </li>
+                           </ul>
+                         </fieldset>
+                         <button type="button">Показать</button>
+                        </form>
+                        </section>
                     </section>
                     <section class="sorting">
                         <h2 class="visually-hidden">Сортировка</h2>
@@ -118,6 +151,28 @@
             тел. +7 (812) 275-75-75
             <button type="button">Напишите нам</button>
           </section>
+          <p class="contact-us">
+              <h1>Напишите нам</h1>
+              <form class="contact-form" action="https://echo.htmlacademy" method="POST">
+                <p>
+                <label for="name-field">Ваше имя: </label>
+                <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+                </p>
+                <p>
+                  <label for="email-field">Ваш e-mail:</label>
+                  <input type="text" name="email" id="email-field" aria-placeholder="email@example.com">
+                </p>
+                <p>
+                  <label for="customer-letter-field">Текст письма:</label>
+                  <br>
+                  <textarea name="customer-letter" id="customer-letter-field" rows="7" cols="50" placeholder="В свободной форме">
+                  </textarea>
+                </p>
+                <p>
+                  <button class="letter-button" type="submit">Отправить</button>
+                </p>
+              </form>
+            </p>
           <section>
             <h3>Социальные сети</h3>
             Давайте дружить, это выгодно!<br>
