@@ -1,6 +1,6 @@
 
 body {
- margin left: 142px;
+ margin: 0;
  padding: 0;
 
  font-size: 24px;
@@ -10,7 +10,6 @@ body {
  color: #000000;
 
  background-color: #ffffff;
- background-position: top center;
 }
 .site-navigation,
 .user-navigation {
@@ -20,7 +19,7 @@ body {
 }
 
 
-.site-navigation
+.site-navigation,
 .user-navigation {
  list-style: none;
 }
@@ -82,12 +81,10 @@ body {
 
  }
  .footer-social-large{
-  font-family: 'Roboto';
   font-size: 36px;
   line-height: 36px;
  }
  .footer-social-small{
-  font-style: regular;
   font-size: 16px;
   line-height: 22px;
  }
