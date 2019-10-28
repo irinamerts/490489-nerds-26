@@ -4,70 +4,73 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         <title>Магазин</title>
     </head>
-    <body>
-        <header>
-                <nav>
-                        <a>
-                            <img src="img/nerds-mini-logo.jpg" width="160" height="65"
-                            alt="Логотип дизайн-студии «Нёрдс»">
-                        </a>
-                        <ul>
+    <body class="inner-page">
+      <header class="inner-header">
+        <nav class="main-navigation">
+          <a class="main-header-logo">
+              <img src="img/nerds-logo.png" width="160" height="65"
+                alt="Логотип дизайн-студии «Нёрдс»">
+              </a>
+                        <ul class="site-navigation">
                           <li><a href="studio.html">Студия</a></li>
                           <li><a href="clients.html">Клиенты</a></li>
                           <li class="site-navigation-current"><a href="ccatalog.html">Магазин</a></li>
-                          <li><a href="contacts.html"></a>Контакты</li>
+                          <li><a href="contacts.html">Контакты</a></li>
                         </ul>
-                        <ul>
+                        <ul class="user-navigation">
                           <li>
                               <button type="button"><img src="img/cart-icon.svg"></button>
-                              Корзина
+                              <a>Корзина</a>
 
                           </li>
                         </ul>
                 </nav>
+                <h1 class="page-title">Магазин готовых шаблонов</h1>
          </header>
                 <main class="container">
-                    <h1 class="page-title">Магазин готовых шаблонов</h1>
                     <section class="filters">
                         <h2 class="visually-hidden">Фильтр товаров</h2>
                        <section>
                        <fieldset>
                           <legend>Сетка</legend>
-                         <ul>
-                           <li class="filter-options">
-                          <input type="radio" checked> Адаптивная
+                         <ul class="filter-options">
+                           <li >
+                          <input type="radio" class="filter-options" checked> Адаптивная
                           </li>
                          <li>
-                           <input type="radio">Фиксированная
+                           <input type="radio" class="filter-options">Фиксированная
                           </li>
                          <li>
-                         <input type="radio"> Резиновая
+                         <input type="radio" class="filter-options"> Резиновая
                            </li>
                        </ul>
                          </fieldset>
                          <fieldset>
                            <legend> Особенности</legend>
-                           <ul>
-                             <li>
-                               <input type="checkbox" checked> Слайдер
+                           <ul class="features">
+                             <li class="features">
+                               <input type="checkbox" checked> <a>Слайдер</a>
                              </li>
-                             <li>
+                             <li class="features">
                                 <input type="checkbox"> Блок преимуществ
                              </li>
-                             <li>
+                             <li class="features">
                                 <input type="checkbox" checked> Новости
                              </li>
-                             <li>
+                             <li class="features">
                                 <input type="checkbox"> Галарея
                              </li>
-                             <li>
+                             <li class="features">
                                 <input type="checkbox"> Корзина
                              </li>
                            </ul>
                          </fieldset>
-                         <button type="button">Показать</button>
+                         <button type="button" class="button-show">Показать</button>
                         </form>
                         </section>
                     </section>
@@ -138,7 +141,7 @@
                             <li class="pagination-item">1</li>
                             <li class="pagination-item"><a href="#">2</a></li>
                             <li class="pagination-item"><a href="#">3</a></li>
-                            <li class="pagination-item"><a href="#">Следующая</a></li>
+                            <li class="pagination-item"><a href="#" class="button next-button">Следующая</a></li>
                           </ul>
                     </section>
                 </main>
@@ -175,14 +178,14 @@
             </p>
           <section>
             <h3>Социальные сети</h3>
-            Давайте дружить, это выгодно!<br>
-            Скидка 10% для друзей из социальных сетей.
+            <div class="footer-social-large"> Давайте дружить, это выгодно!</div><br>
+            <div class="footer-social-small"> Скидка 10% для друзей из социальных сетей.</div>
             <br>
             <img src="img/social.jpg">
             <ul>
               <li> <a href="http://vk.ru">В контакте</a>
               </li>
-              <li><a href="http://facebook.com">Фейсбук></a>
+              <li><a href="http://facebook.com">Фейсбук</a>
               </li>
               <li><a href="http://instagram.com">Инстаграм</a>
               </li>
