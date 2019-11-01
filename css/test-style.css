@@ -1,0 +1,78 @@
+/* ----- Сеточные стили ----- */
+
+html,
+body {
+  min-width: 1440px;
+  min-height: 4046px;
+  background-color: #ffffff;
+}
+
+.main-header {
+  margin-bottom: 80px;
+  /* Временно для сетки */
+  min-height: 545px;
+}
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Временно для сетки */
+  min-height: 545px;
+  background-color: #eeeeee;
+}
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+  /* Временно для сетки */
+  /*display: block;*/
+}
+
+.site-navigation {
+  width: 620px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 70px;
+
+}
+
+.user-navigation {
+  width: 140px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 70px;
+}
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 80px;
+
+  /* Временно для сетки */
+  min-height: 70px;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+.features-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  /* Временно для сетки */
+  min-height: 347px;
+}
+.feature-item {
+  width: 300px;
+  /* Временно для сетки */
+  min-height: 345px;
