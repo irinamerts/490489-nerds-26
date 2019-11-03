@@ -1,39 +1,44 @@
  <!DOCTYPE html>
     <html lang="ru">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="utf-8">
+        <title>HTML Academy: Нёрдс</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <title>Магазин</title>
     </head>
     <body class="inner-page">
-      <header class="inner-header">
-        <nav class="main-navigation">
-          <a class="main-header-logo">
-              <img src="img/nerds-logo.png" width="160" height="65"
-                alt="Логотип дизайн-студии «Нёрдс»">
+        <header class="inner-header">
+            <nav class="main-navigation">
+              <a class="main-header-logo">
+                <img src="img/nerds-logo.png" alt="Логотип дизайн-студии «Нёрдс»">
               </a>
-                        <ul class="site-navigation">
-                          <li><a href="studio.html">Студия</a></li>
-                          <li><a href="clients.html">Клиенты</a></li>
-                          <li class="site-navigation-current"><a href="ccatalog.html">Магазин</a></li>
-                          <li><a href="contacts.html">Контакты</a></li>
-                        </ul>
-                        <ul class="user-navigation">
-                          <li>
-                              <button type="button"><img src="img/cart-icon.svg" alt="Корзина"></button>
-                              <a>Корзина</a>
-
-                          </li>
-                        </ul>
-                </nav>
-
-         </header>
-           <h1 class="page-title">Магазин готовых шаблонов</h1>
-                <main class="container">
+            <div class="main-navigation-wrapper">
+              <div class="container">
+               <ul class="site-navigation">
+                 <li><a href="studio.html"> Студия </a></li>
+                 <li><a href="clients.html"> Клиенты </a></li>
+                 <li><a href="shop.html"> Магазин </a></li>
+                 <li><a href="contacts.html"> Контакты </a></li>
+               </ul>
+               <ul class="user-navigation">
+                 <li>
+                    <button type="button"><img src="img/cart-icon.svg" alt="Корзина"></button>
+                    <a>Корзина</a>
+                 </li>
+               </ul>
+               </div>
+            </div>
+            </nav>
+            <h1 class="page-title">Магазин готовых шаблонов</h1>
+          </header>
+                <main class="container-inner">
+                    <section class="sorting">
+                        <h2 class="visually-hidden">Сортировка</h2>
+                    </section>
+                  <div class="catalog-colums">
+                    <div class="vertical-filters">
                     <section class="filters">
                         <h2 class="visually-hidden">Фильтр товаров</h2>
                       <form>
@@ -74,13 +79,10 @@
                          <button type="button" class="button-show">Показать</button>
                         </form>
                     </section>
-                    <section class="sorting">
-                        <h2 class="visually-hidden">Сортировка</h2>
-                        <!--Здесь будет форма-->
-                    </section>
-                    <section class="catalog">
+                    </div>
+
+                    <div class="catalog">
                         <h2 class="visually-hidden">Список готовых шаблонов</h2>
-                        <!--Здесь будет форма-->
                       <ul class="catalog-list">
                         <li class="catalog-item">
                           <h3>
@@ -143,15 +145,16 @@
                             <li class="pagination-item"><a href="#">3</a></li>
                             <li class="pagination-item"><a href="#" class="button next-button">Следующая</a></li>
                           </ul>
-                    </section>
+                    </div>
+                    </div>
                 </main>
         <footer>
-          <section>
+            <section class="contacts">
             <h3>Контакты</h3>
-            NЁRDS DESIGN STUDIO<br>
-            191186, Санкт-Петербург,<br>
+            <p class="studio">NЁRDS DESIGN STUDIO </p><br>
+            <p class="adress-tel">191186, Санкт-Петербург,<br>
             ул.Б.Конюшенная, д 19/8<br>
-            тел. +7 (812) 275-75-75
+            тел. +7 (812) 275-75-75 <br></p>
             <button type="button">Напишите нам</button>
           </section>
           <div class="contact-us">
@@ -177,22 +180,24 @@
               </form>
           </div>
           <section>
-            <h3>Социальные сети</h3>
-            <div class="footer-social-large"> Давайте дружить, это выгодно!</div><br>
-            <div class="footer-social-small"> Скидка 10% для друзей из социальных сетей.</div>
-            <br>
-            <img src="img/vk-icon.png" width="79" height="79" alt="Nerds В контакте">
-            <img src="img/fb-icon.png" width="79" height="79" alt="Nerds Фейсбук">
-            <img src="img/insta-icon.png" width="79" height="79" alt="Nerds Инстаграм">
-            <ul>
-              <li> <a href="http://vk.ru">В контакте</a>
-              </li>
-              <li><a href="http://facebook.com">Фейсбук</a>
-              </li>
-              <li><a href="http://instagram.com">Инстаграм</a>
-              </li>
-            </ul>
-          </section>
+              <h3>Социальные сети</h3>
+
+              <div class="be-friends">
+              <!-- <img src="img/vk-icon.png" width="79" height="79" alt="Nerds В контакте">
+              <img src="img/fb-icon.png" width="79" height="79" alt="Nerds Фейсбук">
+              <img src="img/insta-icon.png" width="79" height="79" alt="Nerds Инстаграм"> -->
+
+               <ul class="be-friends">
+                <li> <a class="vk" href="http://vk.ru">В контакте</a>
+                </li>
+                <li><a href="http://facebook.com">Фейсбук</a>
+                </li>
+                <li><a href="http://instagram.com">Инстаграм</a>
+                <li> <div class="footer-social"> Давайте дружить, это выгодно!<br>
+                 <div class="small">Скидка 10% для друзей из социальных сетей.</div></li></div> </li>
+               </ul>
+              </div>
+            </section>
           </footer>
     </body>
     </html>

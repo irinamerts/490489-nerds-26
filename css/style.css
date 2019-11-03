@@ -21,14 +21,15 @@ body {
   /* Временно для сетки */
   min-height: 545px;
 }
+.inner-header {
+ height: 355px;
+ background-color: #eeeeee;
+}
 .main-navigation {
   display: flex;
   flex-direction: row;
   /* Временно для сетки */
-  min-height: 545px;
   background-color: #eeeeee;
-
-
 }
 .main-header-logo {
   padding: 0;
@@ -96,6 +97,68 @@ body {
   width: 300px;
   /* Временно для сетки */
   min-height: 345px;
+}
+.container-inner {
+  display: flex;
+  flex-direction: row;
+  width: 1160px;
+  min-height: 2210px;
+}
+.catalog-colums {
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+}
+.vertical-filters {
+ display: flex;
+ flex-direction: column;
+ width: 260px;
+ min-height: 770px;
+}
+.filters {
+ /*width: 260px;
+ min-height: 770px;*/
+
+}
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  width: 760px;
+  justify-content: space-between;
+
+}
+.catalog-item {
+  width: 360px;
+  margin-bottom: 20px;
+
+
+  /* Временно для сетки */
+  min-height: 615px;
+}
+
+.pagination-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+
+.contacts {
+
+}
+.studio  {
+font-size: 18px;
+line-height: 30px;
+}
+.adress-tel  {
+font-size: 16px;
+line-height: 18px;
+color: #666666;
 }
 .be-friends ul {
   display: flex;
